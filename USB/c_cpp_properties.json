@@ -1,0 +1,5 @@
+"includePath"wmic __InstanceOperationEvent WITHIN 1 WHERE TargetInstance ISA 'Win32_PnPEntity'
+ [
+    "${workspaceFolder}/**",
+    "C:/Program Files (x86)/Windows Kits/10/Include/**" // Adjust the path to your Windows SDK installation directory
+],
