@@ -1,6 +1,36 @@
 # USB Device Event Handler
 
-This C program demonstrates how to create a simple USB device event handler using Windows Management Instrumentation (WMI) in C. The program listens for USB device insertion and removal events and performs specific actions based on the detected events.
+## Description
+
+The USB Device Event Handler program outlines a system login process that utilizes a USB device for user authentication. Here's a breakdown of the process:
+
+1. **USB Insertion**:
+   - The process begins when a USB device is inserted into the system.
+
+2. **Check USB Device**:
+   - The system verifies if the inserted USB device is the specific USB device designated for user authentication.
+
+3. **Specific USB Detected**:
+   - If the inserted USB device matches the specific USB device, the default user currently logged into the system is logged out.
+   - Subsequently, the system proceeds to log in the specific user associated with the detected USB device.
+
+4. **Default Session Resumption**:
+   - If the inserted USB device does not match the specific USB device, the system resumes the default user session without any changes.
+
+5. **User Logged In**:
+   - Once the specific user (presumably associated with the inserted USB device) is logged in, the system monitors for USB removal.
+
+6. **USB Removal Check**:
+   - The system continuously checks if the USB device is removed from the system.
+
+7. **USB Removed**:
+   - If the USB device is removed, indicating that the user has removed their authentication token, the specific user is logged out.
+   - Following this, the system logs in the default user, returning the system to its initial state.
+
+8. **Process Continues**:
+   - The process continues to monitor USB insertion and removal events, repeating the authentication and user login/logout cycle as necessary.
+
+This flowchart suggests a security application where a USB key serves as a form of two-factor authentication, allowing access to a specific user account only when the corresponding USB device is present. This approach enhances system security by requiring both a password and physical possession of the USB device for user authentication.
 
 ## Dependencies
 
