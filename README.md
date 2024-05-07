@@ -68,6 +68,21 @@ The program performs the following tasks:
 4. Plug in or remove USB devices to trigger events.
 5. Press Enter to exit the program.
 
+## Remaining Work
+
+The README should include:
+
+- Code snippets for specific functions (if not already provided).
+- Instructions on how to compile the program.
+- Any additional usage details or considerations.
+- Acknowledgment of external libraries or code references (if applicable).
+
+## Remaining Code to Write
+
+1. Implementation of specific action functions (e.g., `LogoutDefaultUser`, `LoginSpecificUser`, etc.).
+2. Code snippets for the WMI event handler struct and its functions.
+3. Instructions for compiling the program with necessary dependencies.
+
 ## Disclaimer
 
 This program is provided as-is and may need modifications to fit specific requirements or environments. Ensure proper permissions and test thoroughly before deploying it in a production environment.
